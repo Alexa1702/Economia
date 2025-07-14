@@ -1,83 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #fefefe;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #fff0f5;
   margin: 0;
-  padding: 20px;
-  color: #333;
+  padding: 30px;
+  color: #5c3d4f;
 }
 
 h1 {
   text-align: center;
   margin-bottom: 40px;
-  color: #444;
+  font-size: 2.5rem;
+  color: #a83279;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.05);
 }
 
+/* Contenedor principal */
 #malla {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/* Semestre con colores pastel alternados */
+/* Semestre como tarjeta redonda con sombra suave */
 .semestre {
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(180, 180, 180, 0.1);
+  background: #ffe4ec;
+  border-radius: 20px;
+  padding: 20px 30px;
+  box-shadow: 0 5px 15px rgba(255, 179, 197, 0.3);
+  border: 2px solid #ffcad4;
+  transition: 0.3s;
 }
 
-.semestre:nth-child(odd) {
-  background-color: #ffe6f0; /* rosado pastel */
+.semestre:hover {
+  transform: translateY(-3px);
 }
 
 .semestre:nth-child(even) {
-  background-color: #e6f2ff; /* azul pastel */
+  background: #fceaff;
+  border-color: #e5c0f1;
 }
 
 .semestre h2 {
   margin-bottom: 15px;
-  color: #444;
+  font-size: 1.8rem;
+  color: #b03060;
+  border-bottom: 2px dashed #eeb7ce;
+  padding-bottom: 8px;
 }
 
-/* Cursos */
+/* Cursos con tarjetas cute */
 .curso {
-  background-color: white;
-  padding: 15px;
-  border-radius: 10px;
-  margin-bottom: 10px;
+  background-color: #fff;
+  padding: 15px 20px;
+  border-radius: 15px;
+  margin: 10px 0;
   cursor: pointer;
-  box-shadow: 0 2px 5px rgba(100, 100, 100, 0.1);
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: all 0.2s ease;
+  border-left: 6px solid #f9c5d5;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
 .curso:hover {
   transform: scale(1.02);
-  box-shadow: 0 4px 12px rgba(100, 100, 100, 0.2);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 .curso.locked {
-  background-color: #e0e0e0;
+  background-color: #f2f2f2;
   cursor: not-allowed;
   opacity: 0.6;
-  box-shadow: none;
+  border-left-color: #ccc;
 }
 
 .curso.aprobado {
-  background-color: #d4f8d4;
-  border: 2px solid #7dd87d;
+  background-color: #d4fcd4;
+  border-left-color: #88e188;
 }
 
 .curso h3 {
-  margin: 0 0 5px 0;
+  margin: 0 0 5px;
   font-size: 1.1rem;
+  font-weight: 600;
+  color: #802c6e;
 }
 
 .curso p {
   margin: 0;
   font-size: 0.95rem;
+  color: #444;
 }
 
 .creditos {
   font-style: italic;
-  color: #666;
+  color: #888;
 }
 
