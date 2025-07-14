@@ -1,100 +1,100 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 body {
-  font-family: 'Quicksand', sans-serif;
-  background-color: #fff0f5;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #ffe4ec, #fceaff);
   margin: 0;
-  padding: 30px;
-  color: #5c3d4f;
+  padding: 40px 20px;
+  color: #3d1e2f;
 }
 
 h1 {
   text-align: center;
-  margin-bottom: 40px;
-  font-size: 2.5rem;
-  color: #a83279;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.05);
+  font-size: 2.8rem;
+  color: #b03060;
+  margin-bottom: 60px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-/* Contenedor principal */
 #malla {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 40px;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
-/* Semestre como tarjeta redonda con sombra suave */
+/* Semestre */
 .semestre {
-  background: #ffe4ec;
+  background: #ffffffcc;
   border-radius: 20px;
-  padding: 20px 30px;
-  box-shadow: 0 5px 15px rgba(255, 179, 197, 0.3);
-  border: 2px solid #ffcad4;
-  transition: 0.3s;
+  padding: 25px;
+  box-shadow: 0 8px 20px rgba(255, 192, 203, 0.3);
+  border-left: 6px solid #f9a8d4;
+  transition: transform 0.2s ease;
 }
 
 .semestre:hover {
-  transform: translateY(-3px);
+  transform: translateY(-6px);
 }
 
 .semestre:nth-child(even) {
-  background: #fceaff;
-  border-color: #e5c0f1;
+  border-left-color: #cdb4db;
 }
 
 .semestre h2 {
-  margin-bottom: 15px;
-  font-size: 1.8rem;
-  color: #b03060;
-  border-bottom: 2px dashed #eeb7ce;
-  padding-bottom: 8px;
+  margin-bottom: 20px;
+  color: #a83279;
+  font-size: 1.6rem;
+  border-bottom: 1px dashed #ddd;
+  padding-bottom: 5px;
 }
 
-/* Cursos con tarjetas cute */
+/* Cursos */
 .curso {
   background-color: #fff;
   padding: 15px 20px;
   border-radius: 15px;
-  margin: 10px 0;
+  margin: 12px 0;
   cursor: pointer;
   transition: all 0.2s ease;
-  border-left: 6px solid #f9c5d5;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border-left: 5px solid #f9c5d5;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
 }
 
 .curso:hover {
   transform: scale(1.02);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
 }
 
 .curso.locked {
-  background-color: #f2f2f2;
+  background-color: #f0f0f0;
+  border-left-color: #bbb;
   cursor: not-allowed;
   opacity: 0.6;
-  border-left-color: #ccc;
+  box-shadow: none;
 }
 
 .curso.aprobado {
   background-color: #d4fcd4;
-  border-left-color: #88e188;
+  border-left-color: #7fdc7f;
 }
 
 .curso h3 {
-  margin: 0 0 5px;
-  font-size: 1.1rem;
+  margin: 0 0 6px 0;
+  font-size: 1.05rem;
   font-weight: 600;
-  color: #802c6e;
+  color: #4b1e3f;
 }
 
 .curso p {
   margin: 0;
-  font-size: 0.95rem;
-  color: #444;
+  font-size: 0.9rem;
+  color: #555;
 }
 
 .creditos {
   font-style: italic;
-  color: #888;
+  font-size: 0.85rem;
+  color: #999;
 }
