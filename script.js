@@ -23,7 +23,7 @@ const cursos = [
   { nombre: "Técnicas de Medición Económica", semestre: 4, creditos: 4, prereq: ["Introducción a la Microeconomía"] },
   { nombre: "Estadística I", semestre: 4, creditos: 3, prereq: ["Álgebra Lineal"] },
   { nombre: "Ciencias Políticas", semestre: 4, creditos: 2 },
-  { nombre: "Inglés III", semestre: 4, creditos: 2, prereq: ["Inglés II"] },
+  { nombre: "Inglés III", semestre: 4, creditos: 3, prereq: ["Inglés II"] },
 
   { nombre: "Economía Internacional", semestre: 5, creditos: 4, prereq: ["Microeconomía II", "Macroeconomía II"] },
   { nombre: "Crecimiento Económico", semestre: 5, creditos: 4, prereq: ["Macroeconomía II"] },
